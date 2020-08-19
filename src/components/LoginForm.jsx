@@ -1,4 +1,6 @@
 import React from 'react';
+import { BrowserRouter as Router, Link} from 'react-router-dom'
+
 import '../index.css';
 import 'bootstrap/dist/css/bootstrap.css';
 
@@ -28,11 +30,19 @@ function LoginForm() {
                 </div>
 
                 <button type="submit" className="btn btn-primary btn-block text-uppercase mb-2 rounded-pill shadow-sm">Sign in</button>
-                <button type="submit" className="btn btn-outline-primary btn-block text-uppercase mb-2 rounded-pill shadow-sm">Register Account</button>
-                <div className="text-center d-flex justify-content-between align-items-center mt-4 "><p>Created by <a href="https://www.linkedin.com/in/Raigo-Tuulik/" className="font-italic text-muted">
-                  <u>Raigo Tuulik</u></a></p>
+                
+                <Link to={'/register-account'} className="btn-link">
+                  <button type="submit" className="btn btn-outline-primary btn-block text-uppercase mb-2 rounded-pill shadow-sm">
+                      Register Account
+                  </button>
+                </Link>
 
-
+                  <div className="text-center d-flex justify-content-between align-items-center mt-4 ">
+                    <p>Created by&nbsp;
+                      <a href="https://www.linkedin.com/in/Raigo-Tuulik/" className="font-italic text-muted">
+                      <u>Raigo Tuulik</u>
+                    </a>
+                  </p>
                 </div>
 
               </form>

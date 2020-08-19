@@ -16,6 +16,9 @@
   background-position: center center;
 }
 
+.btn-link:hover {
+  text-decoration: none;
+}
 
 /*
 * password toggle START
